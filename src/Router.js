@@ -1,9 +1,9 @@
 import React, { useContext } from 'react';
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/layout/Navbar"
-import Register from "./components/layout/Register"
-import Login from "./components/layout//login"
-import Customer from "./components/layout/Customer"
+import Register from "./components/auth/Register"
+import Login from "./components/auth/login"
+import Customer from "./components/customer/Customer"
 import Home from "./components/layout/Home"
 import AuthContext from './context/AuthContext';
 function Router() {

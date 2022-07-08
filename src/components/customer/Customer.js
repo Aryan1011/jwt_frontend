@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import CustomerForm from "../customer/CustomerForm";
-import CustomerList from "../customer/CustomerList";
+import CustomerForm from "./CustomerForm";
+import CustomerList from "./CustomerList";
 
 function Customers() {
   const [customers, setCustomers] = useState([]);
