@@ -28,8 +28,8 @@ function Navbar() {
             {
                 loggedIn===true && (
                     <>
-                        <Link to="/customer">
-                            Customer
+                        <Link to="/member">
+                            Member
                         </Link>
                         <LogOutBtn/>
                     </>

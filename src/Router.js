@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/layout/Navbar"
 import Register from "./components/auth/Register"
 import Login from "./components/auth/login"
-import Customer from "./components/customer/Customer"
+import Member from "./components/member/Member"
 import Home from "./components/layout/Home"
 import AuthContext from './context/AuthContext';
 function Router() {
@@ -25,7 +25,7 @@ function Router() {
 
                 {
                     loggedIn === true && 
-                    <Route path="/customer" element={<Customer />} />
+                    <Route path="/member" element={<Member />} />
 
                 }
 
