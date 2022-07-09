@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import AuthContext from "../../context/AuthContext";
-
+import loginImg from '../../assets/images/loginImg.jpg'
 function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -33,15 +33,23 @@ function Login() {
   }
 
   return (
-    <div>
-      <h1>Login to your account</h1>
-      <form onSubmit={login}>
+    <div className="signup">
+    <div className='signUpForm'>
+      <form onSubmit={login} className="form">
+
+      <div>
+                  <div className='touchContentOuter'>
+                    <p className='touchContent'>Log In</p>
+                  </div>
+                </div>
+                <label htmlFor='email'>Email</label>  
         <input
           type="email"
           placeholder="Email"
           onChange={(e) => setEmail(e.target.value)}
           value={email}
         />
+                <label htmlFor='password'>Password</label>  
         <input
           type="password"
           placeholder="Password"
@@ -51,6 +59,10 @@ function Login() {
 
         <button type="submit">Login</button>
       </form>
+    </div>
+    <div className='signUpImage'>
+            <img src={loginImg} alt="" />
+          </div>
     </div>
   );
 }
