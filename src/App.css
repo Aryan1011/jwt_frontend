@@ -1,0 +1,465 @@
+/* navbar */
+.navbarTopBox{
+    height: 28px;
+    width: 100%;
+    background-color: #40506A;
+    
+  }
+  
+  .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* margin-bottom: 0.5rem; */
+  }
+  
+  .navbarButtons button{
+    width: 108px;
+    height: 43px;
+    background: #40506A;
+    font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: white;
+  border-radius: 32px;
+  margin: 0 0.7rem;
+  }
+  .navbarLogo img{
+    width: 200px;
+    height: 60px;
+    margin: 1.5rem;
+    margin-left: 2rem;
+  }
+  
+  .navbarItems ul li{
+    font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 30px;
+  margin: 0.8rem;
+  color: #40506A;
+  }
+  .navbarItems ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Hero section */
+  
+  .heroContainer{
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+  }
+  
+  .hero{
+    width: 80%;
+    height:100%;
+    transform: translateX(100%);
+    transition: transform 0.3s linear;
+    background-size: cover;
+    background-image: url('./assets/images/heroImage.png');
+  }
+  
+  .hero-load{
+    transform: translateX(22%);
+  }
+  
+  
+  .heroContent{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size:51px;
+  line-height: 54px;
+  display: flex;
+  align-items: center;
+  padding: 4rem;
+  color: #40506A;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  }
+  
+  /* mission */
+  .missionContentOuter{
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+  }
+  .missionContent{
+    font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 110px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0rem auto;
+  color: #40506A;
+  }
+  .missionBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 1rem 0;
+  }
+  .missionBox p{
+    font-family: 'Montserrat';
+    font-style: normal;
+    color: #40506A;
+    font-weight: 300;
+    font-size: 27px;
+  line-height: 30px;
+  width: 80%;
+  }
+  
+  .missionBox img{
+    width: 30%;
+  }
+  .missionBox1{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .missionBox2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    
+  }
+  /* Get in  touch */
+  .touchContentOuter{
+    display: flex;
+    justify-content: center;
+  }
+  .touchContent{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 110px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0rem auto;
+    color: #40506A;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .form > h1 {
+    margin-bottom: 30px;
+  }
+  
+  .form > input,
+  textarea {
+    padding: 12px;
+    border-radius: 3px;
+    /* box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.137); */
+    margin-bottom: 20px;
+    border: 1px solid lightgray;
+    /* border: none; */
+    background: #fff;
+    font-size: 16px;
+    color: rgb(0, 0, 32);
+    outline: none;
+  }
+  
+  .form > input:focus,
+  textarea:focus {
+    border: 1px solid #40506A;
+  }
+  
+  .form > textarea {
+    height: 150px;
+    max-width: 400px;
+    min-height: 100px;
+  }
+  
+  .form > label {
+    padding-bottom: 10px;
+    color: rgb(0, 0, 32);
+    font-weight: bold;
+  }
+  
+  .form > button {
+    padding: 20px;
+    border: none;
+    background-color: #40506A;
+    font-weight: 500;
+    font-size: 20px;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    margin-top: 10px;
+  }
+  
+  .form > button:hover {
+    background-color: #40506A;
+  }
+  
+  /* Differnece */
+  .diffContentOuter{
+    display: flex;
+    justify-content: center;
+  }
+  .diffContent{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 110px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0rem auto;
+    color: #40506A;
+  }
+  
+  .diffMain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 2rem;
+  }
+  
+  .diffImage{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .diffImage img{
+    width: 65%;
+    margin-left: 0 auto;
+  }
+  
+  .diffPitch{
+    width: 50%;
+  }
+  .diffPitch p{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 23px;
+    line-height: 19px;
+    width: 80%;
+    margin-left: 4rem;
+    color: #40506A;
+  }
+  .donateButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .donateButton button{
+    background: #40506A;
+  box-shadow: 0px 0px 30px 7px #FFFFFF;
+  height: 119px;
+  width: 123px;
+  border-radius: 70px;
+  margin-top: 2.5rem;
+  
+  font-family: 'Metropolis';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 31px;
+  /* or 102% */
+  
+  text-align: center;
+  
+  color: #FFFFFF;
+  }
+  
+  /* OUR work */
+  .workContentOuter{
+    display: flex;
+    justify-content: center;
+  }
+  .workContent{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 110px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0rem auto;
+    color: #40506A;
+  }
+  
+  .workPost{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .workPostBox{
+    width: 50%;
+    margin: 1rem 0rem;
+  }
+  .workPostBox img{
+    width: 100%;
+  }
+  /* Footer */
+  
+  .footer{
+    display: flex;
+    align-items: center;
+    background-color: #40506A;
+    width: 100%;
+    padding: 1rem 0;
+    /* height: 35vh; */
+  }
+  
+  .footerLogo{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footerLogo p{
+    color: white;
+    font-family: 'Montserrat';
+    font-style: normal;
+    margin: 0rem 3rem;
+  }
+  .footerLogo img{
+    width: 60%;
+  }
+  .footerHandles{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1.8rem;
+  }
+  .footerHandles p{
+    width: 100%;
+    color: white;
+    font-family: 'Montserrat';
+    font-style: normal;
+  }
+  .footerContact{
+    width: 33%;
+  
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+  .footerContact p{
+    width: 100%;
+    color: white;
+    font-family: 'Montserrat';
+    font-style: normal;
+  }
+  
+  .liContact{
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .liContact2{
+    justify-content: center;
+    display: flex;
+    margin-left: -65px;
+    justify-content: center;
+    align-items: center;
+  }
+  .footerContactLiIcon{
+    padding: 0.4rem 0.4rem;
+  }
+  .socialIcons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .footerHeading{
+    font-size: 39px;
+  }
+  .footerLine{
+    height: 10px;
+    border-top: 5px solid white;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  
+  
+  /* Sign Up Page */
+  
+  .signup{
+    display: flex;
+    padding-bottom: 1rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0rem 1.5rem;
+  }
+  
+  .signUpForm{
+    width: 50%;
+  }
+  .signUpImage{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  .signUpImage img{
+    width: 70%;
+    height: 60%;
+  }
+  
+  /* Sign In Page */
+  
+  .signin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 2rem 1.5rem;
+    height: auto;
+  }
+  
+  .signInForm{
+    width: 50%;
+  }
+  .signInImage{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  .signInImage img{
+    width: 70%;
+    /* height: 60%; */
+  }
+  
+  
+  
