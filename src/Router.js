@@ -26,11 +26,7 @@ function Router() {
                 {
                     loggedIn === true && 
                     <Route path="/timeline" element={<Timeline />} />
-
                 }
-
-
-
             </Routes>
 
         </>

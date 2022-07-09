@@ -4,7 +4,14 @@ import { useNavigate } from "react-router-dom";
 import AuthContext from "../../context/AuthContext";
 
 function Register() {
+
+
   const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
+  const [batch, setBatch] = useState("");
+  const [branch, setBranch] = useState("");
+  const [phone, setPhone] = useState("");
+  const [about, setAbout] = useState("");
   const [password, setPassword] = useState("");
   const [passwordVerify, setPasswordVerify] = useState("");
 
@@ -17,6 +24,11 @@ function Register() {
     try {
       const registerData = {
         email,
+        name,
+        batch,
+        branch,
+        phone,
+        about,
         password,
         passwordVerify,
       };
@@ -24,16 +36,14 @@ function Register() {
       await axios.post("http://localhost:5000/auth/", registerData,{
           withCredentials:true
       });
-    //   await axios.post(
-        // "https://mern-auth-template-tutorial.herokuapp.com/auth/",
-        // registerData
-    //   );
       await getLoggedIn();
       navigate("/");
     } catch (err) {
       console.error(err);
     }
   }
+
+
 
   return (
     <div>
@@ -45,6 +55,37 @@ function Register() {
           onChange={(e) => setEmail(e.target.value)}
           value={email}
         />
+        <input
+          type="name"
+          placeholder="Name"
+          onChange={(e) => setName(e.target.value)}
+          value={name}
+        />
+        <input
+          type="batch"
+          placeholder="Starting Year of Batch"
+          onChange={(e) => setBatch(e.target.value)}
+          value={batch}
+        />
+        <input
+          type="branch"
+          placeholder="Branch"
+          onChange={(e) => setBranch(e.target.value)}
+          value={branch}
+        />
+        <input
+          type="phone"
+          placeholder="Phone"
+          onChange={(e) => setPhone(e.target.value)}
+          value={phone}
+        />
+        <input
+          type="about"
+          placeholder="About Yourself"
+          onChange={(e) => setAbout(e.target.value)}
+          value={about}
+        />
+
         <input
           type="password"
           placeholder="Password"
