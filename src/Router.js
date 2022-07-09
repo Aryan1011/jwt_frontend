@@ -18,9 +18,9 @@ function Router() {
             <Navbar />
             <Routes>
                 <Route exact path="/" element={<HomePage />} />
-                        <Route path="/aboutus" element={<AboutUs />} />
-                        <Route path="/contactus" element={<ContactUs />} />
-                        <Route path="/impactus" element={<ImpactUs />} />
+                        <Route path="/about" element={<AboutUs />} />
+                        <Route path="/contact" element={<ContactUs />} />
+                        <Route path="/impact" element={<ImpactUs />} />
                 {
                     loggedIn === false && <>
                         <Route path="/register" element={<Register />} />

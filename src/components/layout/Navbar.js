@@ -2,24 +2,48 @@ import React, { useContext } from 'react'
 import { Link } from "react-router-dom";
 import AuthContext from '../../context/AuthContext';
 import LogOutBtn from "../auth/LogOutBtn"
+import logo from '../../assets/images/mitraBlackLogo.png';
 function Navbar() {
 
     const { loggedIn } = useContext(AuthContext);
     console.log(loggedIn);
     return (
         <>
+<div className='navbarTopBox'>
+        </div>
+        <div className='navbar'>
 
             <Link to="/">
-                Home
+            <div className='navbarLogo'>
+                <img src={logo} alt="" />
+            </div>
             </Link>
+
+            <div className='navbarItems'>
+                <ul >
+                <Link to="/about"> 
+                  <li>About Us</li>
+                  </Link>
+                  <Link to="/contact"> 
+                  <li>Contact Us</li>
+                  </Link>
+
+                  <Link to="/impact"> 
+                  <li>Impact Us</li>
+                  </Link>
+                </ul>
+            </div>
+
+            <div className='navbarButtons'>
+
             {
                 loggedIn===false && (
                     <>
                         <Link to="/register">
-                            Register
+                        <button >Register</button>
                         </Link>
                         <Link to="/login">
-                            Login
+                        <button >Login</button>
                         </Link>
                     </>
                 )
@@ -29,15 +53,15 @@ function Navbar() {
                 loggedIn===true && (
                     <>
                         <Link to="/timeline">
-                        Timeline
+                        <button >Timeline</button>
                         </Link>
                         <LogOutBtn/>
                     </>
                 )
             }
-
+            </div>
+        </div>
         </>
-
     )
 }
 
