@@ -1,5 +1,6 @@
 import React from 'react'
 import diff from '../../assets/images/diffImage.png'
+import {Link} from 'react-router-dom'
 
 function Difference() {
   return (
@@ -20,7 +21,9 @@ function Difference() {
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad tenetur vitae vel! Odit maxime perspiciatis harum? Quas pariatur iste nemo minima ad, neque, expedita numquam qui repudiandae deleniti architecto maxime nisi incidunt.</p>
       </div>
       <div className="donateButton">
+        <Link to="/donate">
         <button>Donate Now!!</button>
+        </Link>
       </div>
     </div>
     </div>

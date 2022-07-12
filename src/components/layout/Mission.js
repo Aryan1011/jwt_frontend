@@ -5,7 +5,7 @@ import vision from '../../assets/images/vision.png'
 
 function Mission() {
   return (
-    <div>
+    <div >
     <div className='missionContentOuter'>
          <p className='missionContent'>MITRA- touching lives</p>
     </div>

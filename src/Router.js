@@ -9,6 +9,7 @@ import ContactUs from "./Pages/ContactUs"
 import ImpactUs from "./Pages/ImpactUs"
 import AboutUs from "./Pages/AboutUs"
 import Footer from "./components/layout/Footer"
+import Donate from "./components/layout/Donate"
 import AuthContext from './context/AuthContext';
 import './App.css';
 function Router() {
@@ -21,6 +22,7 @@ function Router() {
                         <Route path="/about" element={<AboutUs />} />
                         <Route path="/contact" element={<ContactUs />} />
                         <Route path="/impact" element={<ImpactUs />} />
+                        <Route path="/donate" element={<Donate />} />
                 {
                     loggedIn === false && <>
                         <Route path="/register" element={<Register />} />

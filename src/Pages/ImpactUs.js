@@ -1,8 +1,8 @@
 import React from 'react'
-
+import Difference from '../components/layout/Difference'
 function ImpactUs() {
   return (
-    <div>ImpactUs</div>
+    <Difference/>
   )
 }
 

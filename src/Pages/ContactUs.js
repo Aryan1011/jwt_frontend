@@ -1,8 +1,8 @@
 import React from 'react'
-
+import Touch from '../components/layout/Touch'
 function ContactUs() {
   return (
-    <div>ContactUs</div>
+    <Touch/>
   )
 }
 

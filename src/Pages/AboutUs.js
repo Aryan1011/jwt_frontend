@@ -1,8 +1,10 @@
 import React from 'react'
-
+import Mission from '../components/layout/Mission'
 function AboutUs() {
   return (
-    <div>AboutUs</div>
+    <>
+      <Mission/>
+    </>
   )
 }
 
