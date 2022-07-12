@@ -20,8 +20,10 @@ function TimelineForm({ getTimelines }) {
 
   return (
     <div>
-    adjas
-      <form onSubmit={saveTimeline}>
+    <div className='touchContentOuter'>
+           <p className='touchContent' style={{fontSize:'40px'}}>Add A Timeline Here</p>
+         </div>
+      <form onSubmit={saveTimeline} className="form">
         <input
           type="text"
           placeholder="Timeline name"

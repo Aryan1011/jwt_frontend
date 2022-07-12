@@ -3,7 +3,7 @@ import React from "react";
 function TimelineList({ timelines }) {
   function renderTimelines() {
     return timelines.map((timeline, i) => {
-      return <li key={i}>{timeline.name}</li>;
+      return <li style={{fontSize:'15px'}} key={i}>{timeline.name}</li>;
     });
   }
 
