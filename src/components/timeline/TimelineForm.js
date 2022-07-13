@@ -11,7 +11,7 @@ function TimelineForm({ getTimelines }) {
       const timelineData = {
         name: timelineName,
       };
-       await axios.post("http://localhost:5000/timeline/", timelineData);
+       await axios.post("https://mitrauiet.herokuapp.com/timeline/", timelineData);
       getTimelines();
     } catch (err) {
       console.error(err);

@@ -34,7 +34,7 @@ function Register() {
         passwordVerify,
       };
 
-      await axios.post("http://localhost:5000/auth/", registerData,{
+      await axios.post("https://mitrauiet.herokuapp.com/auth/", registerData,{
           withCredentials:true
       });
       await getLoggedIn();

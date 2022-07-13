@@ -7,7 +7,7 @@ function Timelines() {
   const [timelines, setTimelines] = useState([]);
 
   async function getTimelines() {
-    const timelinesRes = await axios.get("http://localhost:5000/timeline/");
+    const timelinesRes = await axios.get("https://mitrauiet.herokuapp.com/timeline/");
     setTimelines(timelinesRes.data);
   }
 
